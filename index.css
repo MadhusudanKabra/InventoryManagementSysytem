@@ -1,0 +1,142 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: larger;
+    font-family: 'Lora', serif;
+}
+
+/* first-section */
+#header{
+    text-align: center;
+    color: #bbbbbb;
+    background-color: #0a043c;
+    padding: 10px 20px;
+   font-size: 20px;
+   font-weight: 900;
+   font-family: 'Lora', serif;
+}
+
+footer{
+    text-align: center;
+    color: #bbbbbb;
+    background-color: #0a043c;
+    padding: 20px 20px;
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+/* second-section */
+#FormInput{
+    padding-top: 60px;
+}
+
+.invent{
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    background-color: #bbbbbb;
+    padding-top: 20px; 
+    border-radius: 30px;
+}
+
+h4{
+    padding: 0px !important;
+    margin: 0px !important;
+    color: #0a043c;
+}
+
+.Addbtn{
+    margin-top: 15px;
+    text-align: center;
+    
+}
+
+.Addbtn > button{
+    border-radius: 10px;
+    padding: 9px;
+    width: 7vw;
+    cursor: pointer;
+}
+
+.invent  input{
+    padding: 10px;
+    outline-color: #bbbbbb;
+    border:1px solid  #bbbbbb;
+    color:    #0a043c;
+    border-radius: 10px;
+    width: 12em;
+    font-size: large;
+    margin-top: 5px;
+    box-shadow: 1px 1px 7px #353333;
+}
+
+.InputVal{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+} 
+
+/* Inventory Diplaying Table */
+
+.DisplayInventory{
+    padding: 20px;
+    width: 60%;
+    margin: 30px auto;
+    background-color: #4b9bbb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+}
+
+.flexd,.flexd2{
+    display: flex;
+    justify-content: center;
+}
+
+th,td{
+    border: 1px solid black;
+    border-top-color:grey ;
+    font-size: larg;
+}
+
+table{
+    border: 1px solid black;
+    width: 100%;
+}
+#del{
+    width: 20%;
+}
+
+#PrintBtn{
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.print{
+    border-radius: 10px;
+    padding: 9px;
+    width: 7vw;
+    cursor: pointer;
+}
+
+button{
+    padding: 10px 30px;
+    background-color:#0a043c;
+    border: none;
+    color: #bbbbbb;
+    font-weight: bolder;
+}
+
+.btn{
+    background-color: #0a043c;        color: #bbbbbb;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 7px;
+
+}
+.tcenter{
+    text-align: center;
+}

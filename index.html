@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>InventoryManagement</title>
+</head>
+<body>
+    <section id="header">
+        <h1>Inventory Management System</h1>
+    </section>
+    
+    <section id="FormInput">
+        <div class="invent">
+            <h3 style="text-align: center">Enter Details of Object to be added</h3>
+
+            <div class="InputVal">
+                <div>
+                    <h4 style="text-align: center;">Product Name</h4>
+                    <input type="text" placeholder="product" id="product">
+                </div>
+                <div>
+                    <h4 style="text-align: center;">Price</h4>
+                    <input type="number" value="Price" placeholder="price" id="price" onchange="getTotal()"> 
+                </div>
+            </div>
+            <div class="InputVal">
+                <div>
+                    <h4 style="text-align: center;">Quantity</h4>
+                    <input type="number" value="Quantity" placeholder="quantity" id="quantity" onchange="getTotal()">
+                </div>
+                <div>
+                    <h4 style="text-align: center;">Total</h4>
+                    <input type="text"  readonly  id="total">
+                </div>
+            </div>
+            <div class="Addbtn">
+                <button onclick="addToInventory() " >Add Record</button>
+            </div> 
+        </div>
+
+
+        <div class="DisplayInventory">
+            <div class="flexd2">
+                <h1 >Current Inventory</h1>
+            </div>
+
+            <div class="flexd">
+                <table id="TableBody">
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total Amount</th>
+                            <td colspan="2" id="FinalTotal" style="text-align: center;">0</td>
+                        </tr>
+                </table>
+            </div>
+
+            <div id="PrintBtn">
+                <button class="print" onclick="printData()">Print Invoice</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer >
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, architecto.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, amet. Recusandae ratione molestias libero reiciendis aliquid, eius sed eligendi expedita deleniti modi quaerat molestiae ipsam.</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html
